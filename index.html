@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotasSave</title>
+<meta name="description" content="Notas adhesivas para Windows con un botón de copiar en cada línea, modo privado y copia cifrada en tu Google Drive.">
+<link rel="icon" href="favicon.png">
+<style>
+  :root { --bg: #fffdf5; --card: #ffffff; --text: #2b2716; --muted: #6b6448; --accent: #e2ba2d; --line: #eee6c8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1d1b14; --card: #26231a; --text: #f1ecd8; --muted: #b3ab8c; --accent: #ffdd57; --line: #3a3526; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 48px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  header img { width: 72px; height: 72px; }
+  h1 { font-size: 2.2rem; margin: 0; line-height: 1.1; }
+  .lema { color: var(--muted); margin: 4px 0 0; font-size: 1.05rem; }
+  .intro { font-size: 1.1rem; margin: 32px 0 8px; }
+  .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 24px; }
+  .caja { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .caja h2 { font-size: 1rem; margin: 0 0 4px; }
+  .caja p { margin: 0; color: var(--muted); font-size: .95rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 3px solid var(--accent);
+           display: flex; flex-wrap: wrap; gap: 8px 24px; color: var(--muted); font-size: .95rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icono.png" alt="">
+    <div>
+      <h1>NotasSave</h1>
+      <p class="lema">Notas adhesivas para Windows que se copian con un clic.</p>
+    </div>
+  </header>
+
+  <p class="intro">Guarda los datos que pegas a diario —correos, teléfonos, números de cliente,
+  enlaces— y cópialos con el botón que tiene cada línea. Sin sombrear, sin errores.</p>
+
+  <div class="rejilla">
+    <div class="caja">
+      <h2>Copiar en un clic</h2>
+      <p>Cada línea lleva su botón. «Usuario: ana@correo.com» copia solo el correo.</p>
+    </div>
+    <div class="caja">
+      <h2>Modo privado</h2>
+      <p>Tapa las notas con un atajo y las oculta de capturas y pantallas compartidas.</p>
+    </div>
+    <div class="caja">
+      <h2>Protegidas con PIN</h2>
+      <p>Las notas privadas se guardan cifradas y se bloquean solas.</p>
+    </div>
+    <div class="caja">
+      <h2>Copia en tu Google Drive</h2>
+      <p>Opcional y cifrada en tu equipo antes de subir: ni Google puede leerla.</p>
+    </div>
+    <div class="caja">
+      <h2>Minimiza las notas</h2>
+      <p>Pliégalas a su título y abre solo la que necesitas.</p>
+    </div>
+    <div class="caja">
+      <h2>Para empresas</h2>
+      <p>Limita la copia a las cuentas de tu organización por directiva de Windows.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 NotasSave</span>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="mailto:raygarcianegocio@gmail.com">Contacto y soporte</a>
+  </footer>
+</main>
+</body>
+</html>
